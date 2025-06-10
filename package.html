@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Go Trip - Tour Packages</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-analytics.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyAUvthaiqjtVGzF3mLSgc63ktmmdodKiog",
+    authDomain: "traver-tourism.firebaseapp.com",
+    projectId: "traver-tourism",
+    storageBucket: "traver-tourism.firebasestorage.app",
+    messagingSenderId: "343272697347",
+    appId: "1:343272697347:web:817996a70dd55bda34a836",
+    measurementId: "G-25FJFK0EFN"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</head>
+<body>
+
+    <section class="nav-bar">
+        <div class="logo">Go Trip</div>
+        <ul class="menu">
+            <li><a href="travel.html" >Home</a></li>
+            <li><a href="tour.html">Tours</a></li>
+            <li><a href="package.html">Packages</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" >Contact Us</a></li>
+        </ul>
+    </section>
+    
+  <header>
+    <h1>Go Trip Tour Packages</h1>
+  </header>
+
+  <section class="packages-container">
+
+    <div class="package-card">
+      <h2>Galle Fort Exploration</h2>
+      <p>Wander through the colonial charm of Galle Fort, a UNESCO World Heritage site.</p>
+      <p class="duration">Duration: 1 Day</p>
+      <p class="price">$250</p>
+      <button>Book Now</button>
+    </div>
+
+    <div class="package-card">
+      <h2>Negombo Beach & Lagoon Tour</h2>
+      <p>Relax on golden beaches and cruise through the peaceful Negombo lagoon.</p>
+      <p class="duration">Duration: Half Day</p>
+      <p class="price">$230</p>
+      <button>Book Now</button>
+    </div>
+
+    <div class="package-card">
+      <h2>Badulla Scenic Train Journey</h2>
+      <p>Enjoy Sri Lanka’s most scenic train ride with waterfalls and tea plantations.</p>
+      <p class="duration">Duration: 2 Days</p>
+      <p class="price">$220</p>
+      <button>Book Now</button>
+    </div>
+
+    <div class="package-card">
+      <h2>Trincomalee Beach Escape</h2>
+      <p>Discover stunning beaches and ancient temples along the Trincomalee coast.</p>
+      <p class="duration">Duration: 2 Days</p>
+      <p class="price">$250</p>
+      <button>Book Now</button>
+    </div>
+
+    <div class="package-card">
+        <h2>Kandy Cultural Tour</h2>
+        <p>Visit the Temple of the Tooth and beautiful botanical gardens.</p>
+        <p class="duration">Duration: 2 Days</p>
+        <p class="price">$200</p>
+        <button>Book Now</button>
+      </div>
+
+      <div class="package-card">
+        <h2>Anuradhapura Ancient</h2>
+        <p>Explore ancient ruins, stupas, and the sacred Bo Tree in Anuradhapura.</p>
+        <p class="duration">Duration: 2 Days</p>
+        <p class="price">$100</p>
+        <button>Book Now</button>
+      </div>
+
+      <div class="package-card">
+        <h2>Polonnaruwa Heritage Trail</h2>
+        <p>Walk among statues, palaces, and ancient marvels of Polonnaruwa.</p>
+        <p class="duration">Duration: 2 Days</p>
+        <p class="price">$150</p>
+        <button>Book Now</button>
+      </div>
+
+      <div class="package-card">
+        <h2>Sigiriya Rock Fortress</h2>
+        <p>Climb the iconic Sigiriya Rock and enjoy stunning views and history.</p>
+        <p class="duration">Duration: 2 Days</p>
+        <p class="price">$180</p>
+        <button>Book Now</button>
+      </div>
+
+  </section>
+
+<!--===========Footer=================-->
+<footer class="footer">
+    <div class="links">
+        <h3>Quick Links</h3>
+        <ul>
+            <li>Offers & Discounts</li>
+            <li>Get Coupon</li>
+            <li>Contact Us</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="links">
+        <h3>New Products</h3>
+        <ul>
+            <li>Women's Clothing</li>
+            <li>Fashion Accessories</li>
+            <li>Men's Accessories</li>
+            <li>Rubber Toys</li>
+        </ul>
+    </div>
+    <div class="links">
+        <h3>Support</h3>
+        <ul>
+            <li>Frequently Asked Questions</li>
+            <li>Report a Payment Issue</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

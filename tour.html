@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Go Trip | Tours</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"></script>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-analytics.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyAUvthaiqjtVGzF3mLSgc63ktmmdodKiog",
+    authDomain: "traver-tourism.firebaseapp.com",
+    projectId: "traver-tourism",
+    storageBucket: "traver-tourism.firebasestorage.app",
+    messagingSenderId: "343272697347",
+    appId: "1:343272697347:web:817996a70dd55bda34a836",
+    measurementId: "G-25FJFK0EFN"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</head>
+<body>
+
+    <section class="nav-bar">
+        <div class="logo">Go Trip</div>
+        <ul class="menu">
+            <li><a href="travel.html" >Home</a></li>
+            <li><a href="tour.html">Tours</a></li>
+            <li><a href="package.html">Packages</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" >Contact Us</a></li>
+        </ul>
+    </section>
+
+    <header>
+        <h1>Explore Sri Lanka</h1>
+        <p>Discover our top-rated tour packages</p>
+    </header>
+
+    <section class="tours-container">
+        <div class="tour-card">
+            <img src="images/pic02.jpg" alt="Sigiriya Tour">
+            <div class="tour-info">
+                <h2>Sigiriya Rock Day Tour</h2>
+                <p>Explore the ancient rock fortress of Sigiriya with a professional guide.</p>
+                <p class="duration">Duration: 1 Day</p>
+                <p class="price">$150</p>
+            </div>
+        </div>
+
+        <div class="tour-card">
+            <img src="images/pic01.jpg" alt="Kandy Tour">
+            <div class="tour-info">
+                <h2>Kandy Cultural Tour</h2>
+                <p>Visit the Temple of the Tooth and experience cultural performances.</p>
+                <p class="duration">Duration: 1 Day</p>
+                <p class="price">$100</p>
+            </div>
+        </div>
+
+        <div class="tour-card">
+            <img src="images/pic04.jpg" alt="Negombo Tour">
+            <div class="tour-info">
+                <h2>Negombo Beach & Lagoon Tour</h2>
+                <p>Stroll through the Dutch Fort ruins and enjoy fresh seafood by the beach.</p>
+                <p class="duration">Duration: 2 Days</p>
+                <p class="price">$200</p>
+            </div>
+        </div>
+
+        <div class="tour-card">
+            <img src="images/pic05.jpg" alt="Trincomalee Tour">
+            <div class="tour-info">
+                <h2>Trincomalee Beach Escape</h2>
+                <p>Relax on white-sand beaches and visit the historic Koneswaram Temple.</p>
+                <p class="duration">Duration: 2 Days</p>
+                <p class="price">$200</p>
+            </div>
+        </div>
+
+        <div class="tour-card">
+            <img src="images/pic06.jpg" alt="Badulla Tour">
+            <div class="tour-info">
+                <h2>Badulla Scenic Train Journey</h2>
+                <p>Take a scenic train ride and discover hidden waterfalls and tea estates.</p>
+                <p class="duration">Duration: 2 Days</p>
+                <p class="price">$220</p>
+            </div>
+        </div>
+
+        <div class="tour-card">
+            <img src="images/pic03.jpg" alt="Galle Tour">
+            <div class="tour-info">
+                <h2>Galle Fort Exploration</h2>
+                <p>Walk along the Galle Fort walls and explore charming colonial streets.</p>
+                <p class="duration">Duration: 2 Days</p>
+                <p class="price">$250</p>
+            </div>
+        </div>
+
+        <div class="tour-card">
+            <img src="images/pic09.jpg" alt="Anuradhapura Tour">
+            <div class="tour-info">
+                <h2>Anuradhapura Sacred City Tour</h2>
+                <p>Discover the ancient capital's sacred stupas and centuries-old monasteries.</p>
+                <p class="duration">Duration: 2 Days</p>
+                <p class="price">$200</p>
+            </div>
+        </div>
+
+        <div class="tour-card">
+            <img src="images/pic10.jpg" alt="Polonnaruwa Tour">
+            <div class="tour-info">
+                <h2>Polonnaruwa Heritage Tour</h2>
+                <p>Explore the well-preserved ruins of a medieval kingdom and royal palaces.</p>
+                <p class="duration">Duration: 2 Days</p>
+                <p class="price">$150</p>
+            </div>
+        </div>
+    </section>
+
+    <!--===========Footer=================-->
+    <footer class="footer">
+        <div class="links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Offers & Discounts</li>
+                <li>Get Coupon</li>
+                <li>Contact Us</li>
+                <li>About</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h3>New Products</h3>
+            <ul>
+                <li>Women's Clothing</li>
+                <li>Fashion Accessories</li>
+                <li>Men's Accessories</li>
+                <li>Rubber Toys</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h3>Support</h3>
+            <ul>
+                <li>Frequently Asked Questions</li>
+                <li>Report a Payment Issue</li>
+                <li>Terms & Conditions</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

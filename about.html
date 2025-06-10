@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Go Trip</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-analytics.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyAUvthaiqjtVGzF3mLSgc63ktmmdodKiog",
+    authDomain: "traver-tourism.firebaseapp.com",
+    projectId: "traver-tourism",
+    storageBucket: "traver-tourism.firebasestorage.app",
+    messagingSenderId: "343272697347",
+    appId: "1:343272697347:web:817996a70dd55bda34a836",
+    measurementId: "G-25FJFK0EFN"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</head>
+<body>
+
+    <section class="nav-bar">
+        <div class="logo">Go Trip</div>
+        <ul class="menu">
+            <li><a href="travel.html" >Home</a></li>
+            <li><a href="tour.html">Tours</a></li>
+            <li><a href="package.html">Packages</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" >Contact Us</a></li>
+        </ul>
+    </section>
+
+  <header>
+    <h1>About Us</h1>
+    <p>Your Gateway to Explore Sri Lanka</p>
+  </header>
+
+  <section class="about">
+    <div class="about-block">
+      <h2>Who We Are</h2>
+      <p>Go Trip is a leading travel and tour company in Sri Lanka, dedicated to providing unforgettable experiences across the island. From historical wonders to pristine beaches, we connect you with the beauty and culture of Sri Lanka.</p>
+    </div>
+  
+    <div class="about-block">
+      <h2>Our Mission</h2>
+      <p>To offer personalized, affordable, and authentic travel experiences while promoting sustainable tourism in Sri Lanka.</p>
+    </div>
+  
+    <div class="about-block">
+      <h2>Our Vision</h2>
+      <p>To become the most trusted travel partner for discovering the treasures of Sri Lanka.</p>
+    </div>
+  </section>
+  
+
+  <section class="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-member">
+      <img src="images/team01.png" alt="John Silva" />
+      <h3>John Silva</h3>
+      <p>Founder & Tour Expert</p>
+    </div>
+    <div class="team-member">
+      <img src="images/team02.jpg" alt="Nimali Perera" />
+      <h3>Nimali Perera</h3>
+      <p>Travel Consultant</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="links">
+        <h3>Quick Links</h3>
+        <ul>
+            <li>Offers & Discounts</li>
+            <li>Get Coupon</li>
+            <li>Contact Us</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="links">
+        <h3>New Products</h3>
+        <ul>
+            <li>Women's Clothing</li>
+            <li>Fashion Accessories</li>
+            <li>Men's Accessories</li>
+            <li>Rubber Toys</li>
+        </ul>
+    </div>
+    <div class="links">
+        <h3>Support</h3>
+        <ul>
+            <li>Frequently Asked Questions</li>
+            <li>Report a Payment Issue</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

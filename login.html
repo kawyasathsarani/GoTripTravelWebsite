@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Back!</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-analytics.js";
+ 
+  const firebaseConfig = {
+    apiKey: "AIzaSyAUvthaiqjtVGzF3mLSgc63ktmmdodKiog",
+    authDomain: "traver-tourism.firebaseapp.com",
+    projectId: "traver-tourism",
+    storageBucket: "traver-tourism.firebasestorage.app",
+    messagingSenderId: "343272697347",
+    appId: "1:343272697347:web:817996a70dd55bda34a836",
+    measurementId: "G-25FJFK0EFN"
+  };
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</head>
+
+<body1>
+<div class="register-container">
+    <div class="register-box">
+      <h1>Welcome Back!</h1>
+      <form id="login-form">
+        <div class="input-group">
+          <label for="email">Your Email </label>
+          <input type="email" id="email" placeholder="enter your email" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Your Password </label>
+          <input type="password" id="password" placeholder="enter your password" required>
+        </div>
+  
+        <div class="register-link">Don't Have An Account? <a href="register.html">Register New</a>
+        </div>
+        
+        <button type="submit" class="login-button">Login Now</button>
+      </form>
+    </div>
+</div>
+
+  <script>
+    const auth = firebase.auth();
+
+    document.getElementById("login-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      auth.signInWithEmailAndPassword(email, password)
+        .then(userCredential => {
+          alert("Login successful!");
+          window.location.href = "admin.html"; // Redirect to admin for now
+        })
+        .catch(error => alert("Error: " + error.message));
+    });
+  </script>
+</body>
+</html>
